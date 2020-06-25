@@ -5,32 +5,17 @@
     <title>Me</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
-
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <script type="text/javascript">
-
-var bar = new ProgressBar.Circle(skill1, {
-  strokeWidth: 6,
-  easing: 'easeInOut',
-  duration: 1400,
-  color: '#FFEA82',
-  trailColor: '#eee',
-  trailWidth: 1,
-  svgStyle: null
-});
-
-bar.animate(0.7);
-    </script>
+    <script src="https://kit.fontawesome.com/81c65d2303.js" crossorigin="anonymous"></script>
 
   </head>
 
   <body>
 
     <div class="main">
-      <div class="row">
-        <div class="col-5 main_picture"><img src = "assets/images/profile.jpg"></div>
-        <div class="col-6 main_bio">
+      <div class="row bio">
+        <div class="col-md-12 col-lg-6 col-xl-5 main_picture"><img src = "assets/images/profile.jpg"></div>
+        <div class="col-md-12 col-lg-6 col-xl-7 main_bio">
           <div class="main_bio_inner">
             <h1>Артем Хакимов</h1>
             <p>Россия, Татарстан, Казань</p>
@@ -41,35 +26,129 @@ bar.animate(0.7);
     </div>
 
 
+
+<!-- ОБО МНЕ -->
     <div class = "info">
-      <div class="row">
-        <div class="col-7 bordered">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.
+      <div class="row about">
+
+        <div class="d-block d-xl-none col-md-12 col-lg-12 info_name_left"> ОБО МНЕ
         </div>
-        <div class="col-4 info_name"> О СЕБЕ
+
+        <div class="d-block d-xl-none col-md-1 col-lg-1"></div>
+
+        <div class="col-md-10 col-lg-10 col-xl-5 bordered_left">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.
+        </div>
+
+        <div class="d-none d-xl-block col-xl-6 info_name_left"> ОБО МНЕ
         </div>
       </div>
 
+      <!-- ОБРАЗОВАНИЕ -->
+
+
+        <div class="row education">
+
+          <div class="col-md-12 col-lg-12 col-xl-6 info_name_right"> ОБРАЗОВАНИЕ
+          </div>
+          <div class="d-block d-xl-none col-md-1 col-lg-1"></div>
+
+          <div class="col-md-10 col-lg-10 col-xl-5 bordered_right">
+
+            <h1 class="edu_icon"> <i class="fas fa-school"></i> | 131 лицей</h1>
+            <p>Лучший лицей Казани и Татарстана</p>
+            <h1 class="edu_icon" style="margin-top:1em;"><i class="fas fa-university"></i> | ИТИС, КФУ </h1>
+            <p style="margin-bottom:0">Высшая Школа Информационных Технологий и Интеллектуальных Систем</p>
+
+          </div>
+        </div>
+
+
+
+<!-- СКИЛЛЫ -->
       <p style="font-size:5em; text-align:center; color:white; margin-top:1.5em;">СКИЛЛЫ</p>
-      <div class="row">
-        <div class="col-3">
-          <div id="skill1"></div>
 
+      <div class="skills">
+        <div class = "row">
+        <div class="col-lg-3">
 
-        </div>
-        <div class="col-3">
-
-        </div>
-        <div class="col-3">
-
-        </div>
-        <div class="col-3">
+              <div class="progress" style="width:80%; margin-left:10%; height:4vh; box-shadow: 0px 0px 29px -13px #000000; background:none; border:2px solid white;">
+              <div class="progress-bar" role="progressbar" style="width: 90%; background:white;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <p class="skill">Python</p>
 
         </div>
+
+        <div class="col-lg-3">
+
+          <div class="progress" style="width:80%; margin-left:10%; height:4vh; box-shadow: 0px 0px 29px -13px #000000; background:none; border:2px solid white;">
+          <div class="progress-bar" role="progressbar" style="width: 90%; background:white;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <p class="skill">Java</p>
+
+        </div>
+
+        <div class="col-lg-3">
+
+          <div class="progress" style="width:80%; margin-left:10%; height:4vh; box-shadow: 0px 0px 29px -13px #000000; background:none; border:2px solid white;">
+          <div class="progress-bar" role="progressbar" style="width: 100%; background:white;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <p class="skill">HTML5 / CSS3</p>
+
+        </div>
+
+        <div class="col-lg-3">
+
+          <div class="progress" style="width:80%; margin-left:10%; height:4vh; box-shadow: 0px 0px 29px -13px #000000; background:none; border:2px solid white;">
+          <div class="progress-bar" role="progressbar" style="width: 40%; background:white;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+
+        </div>
+        <p class="skill">JavaScript</p>
+
         </div>
 
 
+              <div class="col-lg-3">
 
+                <div class="progress" style="width:80%; margin-left:10%; height:4vh; box-shadow: 0px 0px 29px -13px #000000; background:none; border:2px solid white;">
+                <div class="progress-bar" role="progressbar" style="width: 90%; background:white;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <p class="skill">Django</p>
+
+              </div>
+
+        <div class="col-lg-3">
+
+              <div class="progress" style="width:80%; margin-left:10%; height:4vh; box-shadow: 0px 0px 29px -13px #000000; background:none; border:2px solid white;">
+              <div class="progress-bar" role="progressbar" style="width: 40%; background:white;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <p class="skill">Spring</p>
+
+        </div>
+
+
+        <div class="col-lg-3">
+
+          <div class="progress" style="width:80%; margin-left:10%; height:4vh; box-shadow: 0px 0px 29px -13px #000000; background:none; border:2px solid white;">
+          <div class="progress-bar" role="progressbar" style="width: 35%; background:white;" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <p class="skill">C++</p>
+
+        </div>
+
+        <div class="col-lg-3">
+
+          <div class="progress" style="width:80%; margin-left:10%; height:4vh; box-shadow: 0px 0px 29px -13px #000000; background:none; border:2px solid white;">
+          <div class="progress-bar" role="progressbar" style="width: 40%; background:white;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+
+        </div>
+        <p class="skill">JavaScript</p>
+
+        </div>
       </div>
+      </div>
+
+
+
 
   </body>
 </html>
