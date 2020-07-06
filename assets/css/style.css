@@ -12,6 +12,14 @@ body{
     scroll-behavior: smooth;
 
 }
+a{
+  color:white;
+  border-bottom: 1px dotted white;
+}
+a:hover{
+  color:white;
+  text-decoration: none;
+}
 
 @-webkit-keyframes main_bg {
     0%{background-position:0% 50%}
@@ -177,6 +185,25 @@ body{
       border:5px solid white;
       color:white;
       padding: 2em 3em 2em 3em;
+}
+
+.footer{
+  width:100%;
+  color:white;
+  font-size:1.1em;
+  padding-top:2em;
+  padding-bottom:2em;
+  background: rgba(0,0,0,.1)
+}
+
+.footer i{
+  font-size:1.2em;
+  margin-left:0.3em;
+  margin-right:0.3em;
+}
+
+.footer p{
+  margin-bottom:0.3em;
 }
 
 @media(max-width:1600px){
