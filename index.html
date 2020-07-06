@@ -7,7 +7,17 @@
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <script src="https://kit.fontawesome.com/81c65d2303.js" crossorigin="anonymous"></script>
-
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+     <script>
+ $(document).ready(function(){
+     $('a[href^="#"], *[data-href^="#"]').on('click', function(e){
+         e.preventDefault();
+         var t = 1000;
+         var d = $(this).attr('data-href') ? $(this).attr('data-href') : $(this).attr('href');
+         $('html,body').stop().animate({ scrollTop: $(d).offset().top }, t);
+     });
+ });
+ </script>
   </head>
 
   <body>
@@ -20,6 +30,7 @@
             <h1>Артем Хакимов</h1>
             <p>Россия, Татарстан, Казань</p>
             <p>КФУ, ИТИС, 2018-2023</p>
+            <p><a href="#contacts">Контакты</a></p>
           </div>
         </div>
       </div>
@@ -138,17 +149,73 @@
         <div class="col-lg-3">
 
           <div class="progress" style="width:80%; margin-left:10%; height:4vh; box-shadow: 0px 0px 29px -13px #000000; background:none; border:2px solid white;">
-          <div class="progress-bar" role="progressbar" style="width: 40%; background:white;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+          <div class="progress-bar" role="progressbar" style="width: 83%; background:white;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
 
         </div>
-        <p class="skill">JavaScript</p>
+        <p class="skill">English - C1</p>
 
         </div>
       </div>
       </div>
 
+      <!-- Опыт работы -->
+        <p style="font-size:5em; text-align:center; color:white; margin-top:1.5em;">ОПЫТ РАБОТЫ</p>
+      <div class="row jobs">
+        <div class="col-5 bordered">
+          <h2>SkyEng Math</h2>
+          <p>Преподаватель, обучение школьной математике учеников с 1 по 11 класс</p>
+          <p>05.2019 - 06.2019</p>
+          <p>Удаленно</p>
+        </div>
+        <div class="col-2">
+        </div>
+        <div class="col-5 bordered">
+          <h2>Онлайн-школа PARTA</h2>
+          <p>Менеджер по продажам, вторичные продажи</p>
+          <p>01.2020 - 03.2020</p>
+          <p>Россия, Казань</p>
+        </div>
+
+      </div>
+
+      <div class="row jobs">
+        <div class="col-5 bordered">
+            <h2>Teleperformance Russia Group - Aeroflot</h2>
+            <p>Специалист по работе с клиентами, обработка входящих на английской линии</p>
+            <p>07.2019 - 10.2019</p>
+            <p>Россия, Казань</p>
+        </div>
+        <div class="col-2">
+        </div><div class="col-5 bordered">
+          <h2>Репетитор по математике для учеников с 1 по 11 класс</h2>
+          <p>Школьная программа, государственные экзамены, внутренние экзамены</p>
+          <p>2017 - настоящее время</p>
+          <p>Россия, Казань</p>
+
+        </div>
+
+      </div>
+
+      <div class="row jobs">
+        <div class="col-5 bordered">
+          <h2>Фотограф</h2>
+          <p>Студийная съемка, портреты</p>
+          <p>2017 - настоящее время</p>
+          <p>Россия, Казань</p>
+        </div>
+        <div class="col-2">
+        </div>
+        <div class="col-5 bordered">
+          <h2>ITIS cloud lab</h2>
+          <p>Стажер</p>
+          <p>07.2020 - настоящее время</p>
+          <p>Россия, Казань</p>
+
+        </div>
+      </div>
 
 
 
+<div id="contacts"></div>
   </body>
 </html>
