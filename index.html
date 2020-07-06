@@ -1,223 +1,279 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
+<head>
     <meta charset="utf-8">
     <title>Me</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <script src="https://kit.fontawesome.com/81c65d2303.js" crossorigin="anonymous"></script>
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-     <script>
- $(document).ready(function(){
-     $('a[href^="#"], *[data-href^="#"]').on('click', function(e){
-         e.preventDefault();
-         var t = 1000;
-         var d = $(this).attr('data-href') ? $(this).attr('data-href') : $(this).attr('href');
-         $('html,body').stop().animate({ scrollTop: $(d).offset().top }, t);
-     });
- });
- </script>
-  </head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('a[href^="#"], *[data-href^="#"]').on('click', function (e) {
+                e.preventDefault();
+                var t = 1000;
+                var d = $(this).attr('data-href') ? $(this).attr('data-href') : $(this).attr('href');
+                $('html,body').stop().animate({scrollTop: $(d).offset().top}, t);
+            });
+        });
+    </script>
+</head>
 
-  <body>
+<body>
 
-    <div class="main">
-      <div class="row bio">
-        <div class="col-md-12 col-lg-6 col-xl-5 main_picture"><img src = "assets/images/profile.jpg"></div>
+<div class="main">
+    <div class="row bio">
+        <div class="col-md-12 col-lg-6 col-xl-5 main_picture"><img src="assets/images/profile.jpg"></div>
         <div class="col-md-12 col-lg-6 col-xl-7 main_bio">
-          <div class="main_bio_inner">
-            <h1>Артем Хакимов</h1>
-            <p>Россия, Татарстан, Казань</p>
-            <p>КФУ, ИТИС, 2018-2023</p>
-            <p><a href="#contacts">Контакты</a></p>
-          </div>
+            <div class="main_bio_inner">
+                <h1>Артем Хакимов</h1>
+                <p>Россия, Татарстан, Казань</p>
+                <p>КФУ, ИТИС, 2018-2022</p>
+                <p class="contacts_link"><a href="#contacts">Контакты</a></p>
+                <p class="contacts_link_small"><a href="#contacts_small">Контакты</a></p>
+            </div>
         </div>
-      </div>
     </div>
-
+</div>
 
 
 <!-- ОБО МНЕ -->
-    <div class = "info">
-      <div class="row about">
+<div class="info">
+    <div class="row about">
 
         <div class="d-block d-xl-none col-md-12 col-lg-12 info_name_left"> ОБО МНЕ
         </div>
 
         <div class="d-block d-xl-none col-md-1 col-lg-1"></div>
 
-        <div class="col-md-10 col-lg-10 col-xl-5 bordered_left">Я - начинающий программист из Казани, 19 лет. Учусь на 2 курсе факультета ВШ ИТИС Казанского Федерального Университета. Профессионально занимаюсь фотографией и преподаванием. <br>Среди хобби: рыбалка, игра  на клавишных, путешествия, фильмы, музыка, автомобили. <br>Любимый фильм - Бойцовский клуб, любимый город России  - Москва. Список с любимой музыкой не поместится. Любимая цитата и девиз по жизни: "Carpe diem, memento mori", можно интерпретировать как "Сейчас или никогда".
+        <div class="col-md-10 col-lg-10 col-xl-5 bordered_left">Я - начинающий программист из Казани, 19 лет. Учусь на 2
+            курсе факультета ВШ ИТИС Казанского Федерального Университета. Профессионально занимаюсь фотографией и
+            преподаванием. <br>Среди хобби: рыбалка, игра на клавишных, путешествия, фильмы, музыка, автомобили. <br>Любимый
+            фильм - Бойцовский клуб, любимый город России - Москва. Список с любимой музыкой не поместится. Любимая
+            цитата и девиз по жизни: "Carpe diem, memento mori", можно интерпретировать как "Сейчас или никогда".
         </div>
 
         <div class="d-none d-xl-block col-xl-6 info_name_left"> ОБО МНЕ
         </div>
-      </div>
+    </div>
 
-      <!-- ОБРАЗОВАНИЕ -->
+    <!-- ОБРАЗОВАНИЕ -->
 
 
-        <div class="row education">
+    <div class="row education">
 
-          <div class="col-md-12 col-lg-12 col-xl-6 info_name_right"> ОБРАЗОВАНИЕ
-          </div>
-          <div class="d-block d-xl-none col-md-1 col-lg-1"></div>
+        <div class="col-md-12 col-lg-12 col-xl-6 info_name_right"> ОБРАЗОВАНИЕ
+        </div>
+        <div class="d-block d-xl-none col-md-1 col-lg-1"></div>
 
-          <div class="col-md-10 col-lg-10 col-xl-5 bordered_right">
+        <div class="col-md-10 col-lg-10 col-xl-5 bordered_right">
 
-            <h1 class="edu_icon"> <i class="fas fa-school"></i> | 131 лицей</h1>
+            <h1 class="edu_icon"><i class="fas fa-school"></i> | 131 лицей</h1>
             <p>Лучший лицей Казани и Татарстана</p>
             <h1 class="edu_icon" style="margin-top:1em;"><i class="fas fa-university"></i> | ИТИС, КФУ </h1>
             <p style="margin-bottom:0">Высшая Школа Информационных Технологий и Интеллектуальных Систем</p>
 
-          </div>
         </div>
+    </div>
 
 
+    <!-- СКИЛЛЫ -->
+    <p style="font-size:5em; text-align:center; color:white; margin-top:1.5em;">СКИЛЛЫ</p>
 
-<!-- СКИЛЛЫ -->
-      <p style="font-size:5em; text-align:center; color:white; margin-top:1.5em;">СКИЛЛЫ</p>
+    <div class="skills">
+        <div class="row">
+            <div class="col-lg-3">
 
-      <div class="skills">
-        <div class = "row">
-        <div class="col-lg-3">
+                <div class="progress"
+                     style="width:80%; margin-left:10%; height:4vh; box-shadow: 0px 0px 29px -13px #000000; background:none; border:2px solid white;">
+                    <div class="progress-bar" role="progressbar" style="width: 90%; background:white;"
+                         aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <p class="skill">Python</p>
 
-              <div class="progress" style="width:80%; margin-left:10%; height:4vh; box-shadow: 0px 0px 29px -13px #000000; background:none; border:2px solid white;">
-              <div class="progress-bar" role="progressbar" style="width: 90%; background:white;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-              <p class="skill">Python</p>
+            </div>
 
-        </div>
+            <div class="col-lg-3">
 
-        <div class="col-lg-3">
+                <div class="progress"
+                     style="width:80%; margin-left:10%; height:4vh; box-shadow: 0px 0px 29px -13px #000000; background:none; border:2px solid white;">
+                    <div class="progress-bar" role="progressbar" style="width: 90%; background:white;"
+                         aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <p class="skill">Java</p>
 
-          <div class="progress" style="width:80%; margin-left:10%; height:4vh; box-shadow: 0px 0px 29px -13px #000000; background:none; border:2px solid white;">
-          <div class="progress-bar" role="progressbar" style="width: 90%; background:white;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-          <p class="skill">Java</p>
+            </div>
 
-        </div>
+            <div class="col-lg-3">
 
-        <div class="col-lg-3">
+                <div class="progress"
+                     style="width:80%; margin-left:10%; height:4vh; box-shadow: 0px 0px 29px -13px #000000; background:none; border:2px solid white;">
+                    <div class="progress-bar" role="progressbar" style="width: 100%; background:white;"
+                         aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <p class="skill">HTML5 / CSS3</p>
 
-          <div class="progress" style="width:80%; margin-left:10%; height:4vh; box-shadow: 0px 0px 29px -13px #000000; background:none; border:2px solid white;">
-          <div class="progress-bar" role="progressbar" style="width: 100%; background:white;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-          <p class="skill">HTML5 / CSS3</p>
+            </div>
 
-        </div>
+            <div class="col-lg-3">
 
-        <div class="col-lg-3">
+                <div class="progress"
+                     style="width:80%; margin-left:10%; height:4vh; box-shadow: 0px 0px 29px -13px #000000; background:none; border:2px solid white;">
+                    <div class="progress-bar" role="progressbar" style="width: 40%; background:white;"
+                         aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
 
-          <div class="progress" style="width:80%; margin-left:10%; height:4vh; box-shadow: 0px 0px 29px -13px #000000; background:none; border:2px solid white;">
-          <div class="progress-bar" role="progressbar" style="width: 40%; background:white;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <p class="skill">JavaScript</p>
 
-        </div>
-        <p class="skill">JavaScript</p>
-
-        </div>
+            </div>
 
 
-              <div class="col-lg-3">
+            <div class="col-lg-3">
 
-                <div class="progress" style="width:80%; margin-left:10%; height:4vh; box-shadow: 0px 0px 29px -13px #000000; background:none; border:2px solid white;">
-                <div class="progress-bar" role="progressbar" style="width: 90%; background:white;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress"
+                     style="width:80%; margin-left:10%; height:4vh; box-shadow: 0px 0px 29px -13px #000000; background:none; border:2px solid white;">
+                    <div class="progress-bar" role="progressbar" style="width: 90%; background:white;"
+                         aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
                 <p class="skill">Django</p>
 
-              </div>
+            </div>
 
-        <div class="col-lg-3">
+            <div class="col-lg-3">
 
-              <div class="progress" style="width:80%; margin-left:10%; height:4vh; box-shadow: 0px 0px 29px -13px #000000; background:none; border:2px solid white;">
-              <div class="progress-bar" role="progressbar" style="width: 40%; background:white;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-              <p class="skill">Spring</p>
+                <div class="progress"
+                     style="width:80%; margin-left:10%; height:4vh; box-shadow: 0px 0px 29px -13px #000000; background:none; border:2px solid white;">
+                    <div class="progress-bar" role="progressbar" style="width: 40%; background:white;"
+                         aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <p class="skill">Spring</p>
 
+            </div>
+
+
+            <div class="col-lg-3">
+
+                <div class="progress"
+                     style="width:80%; margin-left:10%; height:4vh; box-shadow: 0px 0px 29px -13px #000000; background:none; border:2px solid white;">
+                    <div class="progress-bar" role="progressbar" style="width: 35%; background:white;"
+                         aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <p class="skill">C++</p>
+
+            </div>
+
+            <div class="col-lg-3">
+
+                <div class="progress"
+                     style="width:80%; margin-left:10%; height:4vh; box-shadow: 0px 0px 29px -13px #000000; background:none; border:2px solid white;">
+                    <div class="progress-bar" role="progressbar" style="width: 83%; background:white;"
+                         aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+
+                </div>
+                <p class="skill">English - C1</p>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Опыт работы -->
+    <p class="jobs_header">ОПЫТ РАБОТЫ</p>
+    <div class="row jobs">
+
+        <div class="d-block d-xl-none col-1">
         </div>
 
-
-        <div class="col-lg-3">
-
-          <div class="progress" style="width:80%; margin-left:10%; height:4vh; box-shadow: 0px 0px 29px -13px #000000; background:none; border:2px solid white;">
-          <div class="progress-bar" role="progressbar" style="width: 35%; background:white;" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-          <p class="skill">C++</p>
-
+        <div class="col-lg-10 col-xl-5 bordered job1">
+            <h2>SkyEng Math</h2>
+            <p>Преподаватель, обучение школьной математике учеников с 1 по 11 класс</p>
+            <p>05.2019 - 06.2019</p>
+            <p>Удаленно</p>
+        </div>
+        <div class="d-block d-xl-none col-1">
+        </div>
+        <div class="d-block d-xl-none col-1">
         </div>
 
-        <div class="col-lg-3">
-
-          <div class="progress" style="width:80%; margin-left:10%; height:4vh; box-shadow: 0px 0px 29px -13px #000000; background:none; border:2px solid white;">
-          <div class="progress-bar" role="progressbar" style="width: 83%; background:white;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
-
-        </div>
-        <p class="skill">English - C1</p>
-
-        </div>
-      </div>
-      </div>
-
-      <!-- Опыт работы -->
-        <p style="font-size:5em; text-align:center; color:white; margin-top:1.5em;">ОПЫТ РАБОТЫ</p>
-      <div class="row jobs">
-        <div class="col-5 bordered">
-          <h2>SkyEng Math</h2>
-          <p>Преподаватель, обучение школьной математике учеников с 1 по 11 класс</p>
-          <p>05.2019 - 06.2019</p>
-          <p>Удаленно</p>
-        </div>
-        <div class="col-2">
-        </div>
-        <div class="col-5 bordered">
-          <h2>Онлайн-школа PARTA</h2>
-          <p>Менеджер по продажам, вторичные продажи</p>
-          <p>01.2020 - 03.2020</p>
-          <p>Россия, Казань</p>
+        <div class="col-xl-2 d-none d-xl-block">
         </div>
 
-      </div>
+        <div class="col-lg-10 col-xl-5 bordered job2">
+            <h2>Онлайн-школа PARTA</h2>
+            <p>Менеджер по продажам, вторичные продажи</p>
+            <p>01.2020 - 03.2020</p>
+            <p>Россия, Казань</p>
+        </div>
 
-      <div class="row jobs">
-        <div class="col-5 bordered">
+    </div>
+
+    <div class="row jobs">
+        <div class="d-block d-xl-none col-1">
+        </div>
+        <div class="col-lg-10 col-xl-5 bordered job3">
             <h2>Teleperformance Russia Group - Aeroflot</h2>
             <p>Специалист по работе с клиентами, обработка входящих на английской линии</p>
             <p>07.2019 - 10.2019</p>
             <p>Россия, Казань</p>
         </div>
-        <div class="col-2">
-        </div>
-        <div class="col-5 bordered">
-          <h2>ITIS cloud lab</h2>
-          <p>Стажер</p>
-          <p>07.2020 - настоящее время</p>
-          <p>Россия, Казань</p>
-
+        <div class="d-block d-xl-none col-1">
         </div>
 
-      </div>
+        <div class="d-block d-xl-none col-1">
+        </div>
 
-<div id="contacts" class="footer">
-<div class="row">
-  <div class="col-1">
+        <div class="col-xl-2 d-none d-xl-block">
+        </div>
+        <div class="col-lg-10 col-xl-5 bordered job4">
+            <h2>ITIS cloud lab</h2>
+            <p>Стажер</p>
+            <p>07.2020 - настоящее время</p>
+            <p>Россия, Казань</p>
 
-  </div>
-  <div class="col-5" style="text-align:right; padding-right:1em;">
-    <p><i class="fab fa-github"></i> <a href="https://github.com/ninehellcircle" target="_blank">@ninehellcircle</a></p>
-    <p><i class="fab fa-vk"></i> <a href="https://vk.com/ninehellcircle" target="_blank">@ninehellcircle</a></p>
-    <p><i class="fab fa-instagram"></i> <a href="https://instagram.com/ninehellcircle" target="_blank">@ninehellcircle</a></p>
-    <p><i class="fab fa-telegram-plane"></i> <a href="https://t.me/ninehellcircle" target="_blank">@ninehellcircle</a></p>
-    <p><i class="fas fa-at"></i> arthack00@gmail.com</p>
-    <p><i class="fas fa-phone"></i> +79050239108</p>
-  </div>
-  <div class="col-5" style="padding-left:1em;">
-    <p>&copy; 2020 | Designed by ninehellcircle</p>
-  </div>
-  <div class="col-1">
+        </div>
 
-  </div>
+    </div>
+
+    <div id="contacts" class="footer">
+        <div class="row">
+            <div class="col-1">
+
+            </div>
+            <div class="col-5" style="text-align:right; padding-right:1em;">
+                <p><i class="fab fa-github"></i> <a href="https://github.com/ninehellcircle" target="_blank">@ninehellcircle</a>
+                </p>
+                <p><i class="fab fa-vk"></i> <a href="https://vk.com/ninehellcircle" target="_blank">@ninehellcircle</a>
+                </p>
+                <p><i class="fab fa-instagram"></i> <a href="https://instagram.com/ninehellcircle" target="_blank">@ninehellcircle</a>
+                </p>
+                <p><i class="fab fa-telegram-plane"></i> <a href="https://t.me/ninehellcircle" target="_blank">@ninehellcircle</a>
+                </p>
+                <p><i class="fas fa-at"></i> arthack00@gmail.com</p>
+                <p><i class="fas fa-phone"></i> +79050239108</p>
+            </div>
+            <div class="col-5" style="padding-left:1em;">
+                <p>&copy; 2020 | Designed by ninehellcircle</p>
+            </div>
+            <div class="col-1">
+
+            </div>
+        </div>
+    </div>
+
+    <div id="contacts_small" class="footer_small">
+
+                <p><a href="https://github.com/ninehellcircle" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://vk.com/ninehellcircle" target="_blank"><i class="fab fa-vk"></i></a>
+                <a href="https://instagram.com/ninehellcircle" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://t.me/ninehellcircle" target="_blank"><i class="fab fa-telegram-plane"></i></a></p>
+                <p><i class="fas fa-at"></i> arthack00@gmail.com</p>
+                <p><i class="fas fa-phone"></i> +79050239108</p>
+
+                <p>&copy; 2020 | Designed by ninehellcircle</p>
+
+
+    </div>
 </div>
-</div>
 
-  </body>
+</body>
 </html>
